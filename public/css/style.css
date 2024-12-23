@@ -1,0 +1,128 @@
+body {
+    background-color: #141313;
+    color: #b49509;
+    font-family: "VT323", monospace;
+    font-size: 20px;
+}
+
+/* Style pour le bouton */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f7f7f7;
+    background: linear-gradient(45deg, #b49509, #5f4a05);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+
+}
+
+/* Ajout d'effet au survol */
+.btn:hover {
+    background: linear-gradient(45deg, #c00a0a, #6d0505);
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Ajouter un effet "focus" */
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 8px #e95703;
+}
+
+/* Désactiver le bouton */
+.btn:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+
+/* Style global pour le formulaire */
+form {
+    max-width: 820px;
+    margin: 50px; /* Centrer le formulaire */
+    margin-left: 100px;
+    padding: 20px;
+    background: #443a32;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 30px;
+}
+
+/* Style des champs de formulaire */
+form input, form textarea, form select {
+    width: 30%; /* Champs prennent toute la largeur */
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Champs en focus */
+form input:focus, form textarea:focus, form select:focus {
+    border-color: #c00a0a;
+    box-shadow: 0 0 5px #6d0505(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Alignement des labels */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #b49509;
+}
+
+
+/* Style pour les titres */
+.main-title {
+    text-align: center; /* Centrer le titre */
+    font-weight: 700; /* Gras pour le titre */
+    margin-bottom: 110px; /* Espacement inférieur */
+    color: #413a3a; /* Couleur du texte */
+    text-transform: uppercase; /* Convertir le texte en majuscules */
+    letter-spacing: 2px; /* Espacement entre les lettres */
+    position: relative; /* Position pour les décorations */
+    font-size: 110px;
+}
+
+/* Ligne décorative sous le titre */
+.main-title::after {
+    content: ''; /* Pseudo-élément vide */
+    display: block;
+    width: 120px; /* Largeur de la ligne */
+    height: 6px; /* Épaisseur de la ligne */
+    background: linear-gradient(90deg, #b49509, #c0960d); /* Dégradé de couleur */
+    margin: 10px auto 0; /* Centrer la ligne et espacement */
+    border-radius: 2px; /* Arrondir légèrement la ligne */
+}
+
+/* Animation au survol */
+.main-title:hover {
+    color: #c00a0a; /* Change la couleur du titre au survol */
+    transform: scale(1.05); /* Légère mise en avant */
+    transition: all 0.3s ease;
+}
+
+
+/* Style pour les attaques super efficaces */
+.super-effective {
+    color: #c00a0a; /* Texte en rouge */
+    font-weight: bold; /* Texte en gras pour attirer l'attention */
+}
+
+/* Style pour les attaques non efficaces */
+.not-effective {
+    color: #443f3f; /* Texte en rouge */
+    font-weight: bold; /* Texte en gras pour attirer l'attention */
+}

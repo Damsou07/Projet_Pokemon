@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+    <h1 class="main-title">Poke Tool</h1>
+    <h1>Selectionner le ou les type(s) d'un pokemon afin d'afficher toutes les caractéristiques et d'avoir une prise de decision optimal en combat</h1>
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <button type="submit" class="btn btn-primary">Start Analize</button>
+    {{ form_end(form) }}
+
+    {% if userInputInvalid %}
+        <p>error : type(s) incorrect(s)</p>
+    {% endif %}
+
+
+    {% if show_inclusion %}
+        {% if secondType %}
+            {% include 'app/doubleTypeFeatures.html.twig' with { 'initType': initType, "secondType": secondType } %}
+        {% else %}
+            {% include 'app/oneTypeFeatures.html.twig' with { 'initType': initType } %}
+        {% endif %}
+    {% endif %}
+
+{% endblock %}

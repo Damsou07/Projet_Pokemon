@@ -1,0 +1,63 @@
+<h1>Types : {{ initType.nameType }} et {{ secondType.nameType }}<h1>
+<p>Multiplicateurs de dégats contre un pokemon de double type {{ initType.nameType }} et {{ secondType.nameType }} : </p>
+
+{% include 'app/displayStats/multDgtType.html.twig' with { 'type': 'Acier', 'resType' : initType.resAcier * secondType.resAcier } %}
+{% include 'app/displayStats/multDgtType.html.twig' with { 'type': 'Combat', 'resType' : initType.resCombat * secondType.resCombat } %}
+{% include 'app/displayStats/multDgtType.html.twig' with { 'type': 'Dragon', 'resType' : initType.resDragon * secondType.resDragon } %}
+{% include 'app/displayStats/multDgtType.html.twig' with { 'type': 'Eau', 'resType' : initType.resEau * secondType.resEau } %}
+{% include 'app/displayStats/multDgtType.html.twig' with { 'type': 'Feu', 'resType' : initType.resFeu * secondType.resFeu } %}
+{% include 'app/displayStats/multDgtType.html.twig' with { 'type': 'Electrik', 'resType' : initType.resElectrik * secondType.resElectrik } %}
+{% include 'app/displayStats/multDgtType.html.twig' with { 'type': 'Fee', 'resType' : initType.resFee * secondType.resFee } %}
+{% include 'app/displayStats/multDgtType.html.twig' with { 'type': 'Glace', 'resType' : initType.resGlace * secondType.resGlace } %}
+{% include 'app/displayStats/multDgtType.html.twig' with { 'type': 'Insecte', 'resType' : initType.resInsecte * secondType.resInsecte } %}
+{% include 'app/displayStats/multDgtType.html.twig' with { 'type': 'Normal', 'resType' : initType.resNormal * secondType.resNormal } %}
+{% include 'app/displayStats/multDgtType.html.twig' with { 'type': 'Plante', 'resType' : initType.resPlante * secondType.resPlante } %}
+{% include 'app/displayStats/multDgtType.html.twig' with { 'type': 'Poison', 'resType' : initType.resPoison * secondType.resPoison } %}
+{% include 'app/displayStats/multDgtType.html.twig' with { 'type': 'Psy', 'resType' : initType.resPsy * secondType.resPsy } %}
+{% include 'app/displayStats/multDgtType.html.twig' with { 'type': 'Roche', 'resType' : initType.resRoche * secondType.resRoche } %}
+{% include 'app/displayStats/multDgtType.html.twig' with { 'type': 'Sol', 'resType' : initType.resSol * secondType.resSol } %}
+{% include 'app/displayStats/multDgtType.html.twig' with { 'type': 'Spectre', 'resType' : initType.resSpectre * secondType.resSpectre } %}
+{% include 'app/displayStats/multDgtType.html.twig' with { 'type': 'Tenebres', 'resType' : initType.resTenebres * secondType.resTenebres } %}
+{% include 'app/displayStats/multDgtType.html.twig' with { 'type': 'Vol', 'resType' : initType.resVol * secondType.resVol} %}
+
+<p>Les Multiplicateurs de dégats du type {{ initType.nameType }} : </p>
+
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Acier', 'multDamageToType' : initType.multDamageToAcier, 'nameType' : initType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Combat', 'multDamageToType' : initType.multDamageToCombat, 'nameType' : initType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Dragon', 'multDamageToType' : initType.multDamageToDragon, 'nameType' : initType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Eau', 'multDamageToType' : initType.multDamageToEau, 'nameType' : initType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Feu', 'multDamageToType' : initType.multDamageToFeu, 'nameType' : initType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Electrik', 'multDamageToType' : initType.multDamageToElectrik, 'nameType' : initType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Fee', 'multDamageToType' : initType.multDamageToFee, 'nameType' : initType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Glace', 'multDamageToType' : initType.multDamageToGlace, 'nameType' : initType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Insecte', 'multDamageToType' : initType.multDamageToInsecte, 'nameType' : initType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Normal', 'multDamageToType' : initType.multDamageToNormal, 'nameType' : initType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Plante', 'multDamageToType' : initType.multDamageToPlante, 'nameType' : initType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Poison', 'multDamageToType' : initType.multDamageToPoison, 'nameType' : initType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Psy', 'multDamageToType' : initType.multDamageToPsy, 'nameType' : initType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Roche', 'multDamageToType' : initType.multDamageToRoche, 'nameType' : initType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Sol', 'multDamageToType' : initType.multDamageToSol, 'nameType' : initType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Spectre', 'multDamageToType' : initType.multDamageToSpectre, 'nameType' : initType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Tenebres', 'multDamageToType' : initType.multDamageToTenebres, 'nameType' : initType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Vol', 'multDamageToType' : initType.multDamageToVol, 'nameType' : initType.nameType } %}
+
+<p>Les Multiplicateurs de dégats du type {{ secondType.nameType }} : </p>
+
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Acier', 'multDamageToType' : secondType.multDamageToAcier, 'nameType' : secondType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Combat', 'multDamageToType' : secondType.multDamageToCombat, 'nameType' : secondType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Dragon', 'multDamageToType' : secondType.multDamageToDragon, 'nameType' : secondType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Eau', 'multDamageToType' : secondType.multDamageToEau, 'nameType' : secondType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Feu', 'multDamageToType' : secondType.multDamageToFeu, 'nameType' : secondType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Electrik', 'multDamageToType' : secondType.multDamageToElectrik, 'nameType' : secondType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Fee', 'multDamageToType' : secondType.multDamageToFee, 'nameType' : secondType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Glace', 'multDamageToType' : secondType.multDamageToGlace, 'nameType' : secondType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Insecte', 'multDamageToType' : secondType.multDamageToInsecte, 'nameType' : secondType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Normal', 'multDamageToType' : secondType.multDamageToNormal, 'nameType' : secondType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Plante', 'multDamageToType' : secondType.multDamageToPlante, 'nameType' : secondType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Poison', 'multDamageToType' : secondType.multDamageToPoison, 'nameType' : secondType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Psy', 'multDamageToType' : secondType.multDamageToPsy, 'nameType' : secondType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Roche', 'multDamageToType' : secondType.multDamageToRoche, 'nameType' : secondType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Sol', 'multDamageToType' : secondType.multDamageToSol, 'nameType' : secondType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Spectre', 'multDamageToType' : secondType.multDamageToSpectre, 'nameType' : secondType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Tenebres', 'multDamageToType' : secondType.multDamageToTenebres, 'nameType' : secondType.nameType } %}
+{% include 'app/displayStats/multResType.html.twig' with { 'type': 'Vol', 'multDamageToType' : secondType.multDamageToVol, 'nameType' : secondType.nameType } %}

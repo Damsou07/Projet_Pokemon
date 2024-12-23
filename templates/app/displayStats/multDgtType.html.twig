@@ -1,0 +1,16 @@
+<li class="{% if resType >= 2 %}super-effective{% endif %} {% if resType <= 0.5 %}not-effective{% endif %}">
+    Les attaques de type {{ type }}
+    {% if resType == 4 %}
+        sont super efficaces (x4)
+    {% elseif resType == 2 %}
+        sont super efficaces (x2)
+    {% elseif resType == 1 %}
+        sont normales (x1)
+    {% elseif resType == 0.5 %}
+        ne sont pas trés efficaces (x0.5)
+    {% elseif resType == 0.25 %}
+        ne sont pas trés efficaces (x0.25)
+    {% elseif resType == 0 %}
+        sont sans effets (x0)
+    {% endif %}
+</li>

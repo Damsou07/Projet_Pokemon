@@ -1,0 +1,15 @@
+<li class="{% if multDamageToType >= 2 %}super-effective{% endif %} {% if multDamageToType <= 0.5 %}not-effective{% endif %}">
+    Les attaques de type {{ nameType }} contre le type {{ type }}
+    {% if multDamageToType == 2 %}
+        sont super efficaces (x2)
+    {% elseif multDamageToType == 1 %}
+        sont normales (x1)
+    {% elseif multDamageToType == 0.5 %}
+        ne sont pas trés efficaces (x0.5)
+    {% elseif multDamageToType == 0.25 %}
+        ne sont pas trés efficaces (x0.25)
+    {% elseif multDamageToType == 0 %}
+        sont sans effets (x0)
+    {% endif %}
+</li>
+
